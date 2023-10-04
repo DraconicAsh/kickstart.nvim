@@ -25,7 +25,6 @@ local boggs_catppuccin = [[
 
 return {
   "zaldih/themery.nvim",
-  lazy = false,
   opts = {
     themes = {
       {

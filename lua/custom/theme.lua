@@ -6,7 +6,7 @@ integrations = {
 ts_rainbow = true,
 },
 color_overrides = {
-mocha = {
+macchiato = {
 text = "#F4CDE9",
 subtext1 = "#DEBAD4",
 subtext0 = "#C8A6BE",
@@ -24,6 +24,6 @@ crust = "#1a1016",
 },
 })
 
-vim.cmd("colorscheme catppuccin-mocha")
+vim.cmd("colorscheme catppuccin-macchiato")
 vim.g.theme_id = 1
 -- end themery block

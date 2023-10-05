@@ -4,7 +4,7 @@ local boggs_catppuccin = [[
       ts_rainbow = true,
     },
     color_overrides = {
-      mocha = {
+      macchiato = {
         text = "#F4CDE9",
         subtext1 = "#DEBAD4",
         subtext0 = "#C8A6BE",
@@ -29,12 +29,12 @@ return {
     themes = {
       {
         name = "Roseppuccin",
-        colorscheme = "catppuccin-mocha",
+        colorscheme = "catppuccin-macchiato",
         before = string.format('vim.o.background = "dark"\n%s', boggs_catppuccin),
       },
       {
-        name = "Catppuccin Macchiato",
-        colorscheme = "catppuccin-macchiato",
+        name = "Catppuccin Mocha",
+        colorscheme = "catppuccin-mocha",
       },
       "onedark",
     },                                                       -- Your list of installed colorschemes

@@ -221,7 +221,14 @@ require('lazy').setup({
 require('custom.theme')
 
 -- Themery Keymap
-vim.keymap.set('n', '<leader>t', ':Themery<cr>', { desc = 'Open Themery menu' })
+vim.keymap.set('n', '<leader>ts', function()
+  vim.cmd('Themery')
+end, { desc = '[T]heme [S]elector' })
+
+-- Transparency toggle
+vim.keymap.set('n', '<leader>tt', function()
+  vim.cmd('TransparentToggle')
+end, { desc = '[T]ransparency [T]oggle' })
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -463,6 +470,7 @@ require('which-key').register({
   ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
   ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
   ['<leader>f'] = { name = '[F]ormat', _ = 'which_key_ignore' },
+  ['<leader>t'] = { name = '[T]heme', _ = 'which_key_ignore' },
 })
 
 -- Enable the following language servers

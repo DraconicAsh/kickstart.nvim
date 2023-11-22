@@ -6,8 +6,14 @@ local schemes = {
   },
   {
     -- Catpuccin Theme
-    "catppuccin/nvim",
+    'catppuccin/nvim',
     name = "catppuccin",
+    priority = 1000
+  },
+  {
+    -- Rose Pine Theme
+    'rose-pine/neovim',
+    name = "rose-pine",
     priority = 1000
   },
 }

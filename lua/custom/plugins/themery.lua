@@ -33,10 +33,25 @@ return {
         before = string.format('vim.o.background = "dark"\n%s', boggs_catppuccin),
       },
       {
+        name = "Rosé Pine Moon",
+        colorscheme = "rose-pine-moon",
+      },
+      {
+        name = "Rosé Pine",
+        colorscheme = "rose-pine-main",
+      },
+      {
         name = "Catppuccin Mocha",
         colorscheme = "catppuccin-mocha",
       },
-      "onedark",
+      {
+        name = "onedark",
+        colorscheme = "onedark",
+      },
+      {
+        name = "Rosé Pine Dawn",
+        colorscheme = "rose-pine-dawn",
+      },
     },                                                       -- Your list of installed colorschemes
     themeConfigFile = "~/.config/nvim/lua/custom/theme.lua", -- Described below
     livePreview = true,                                      -- Apply theme while browsing. Default to true.

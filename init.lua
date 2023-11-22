@@ -498,6 +498,19 @@ local servers = {
   },
 }
 
+-- Language servers not managed by mason
+local man_servers = {
+  'zls',
+}
+
+-- Setup language servers not managed by mason
+local lspconfig = require('lspconfig')
+for _, lsp in ipairs(man_servers) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+  }
+end
+
 -- Setup neovim lua configuration
 require('neodev').setup()
 
